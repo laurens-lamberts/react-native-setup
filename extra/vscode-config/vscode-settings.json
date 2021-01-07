@@ -1,0 +1,63 @@
+{
+  "workbench.tree.indent": 18,
+  "workbench.startupEditor": "newUntitledFile",
+  "standard.usePackageJson": true,
+  "standard.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "javascript.validate.enable": false,
+  "javascript.implicitProjectConfig.checkJs": true,
+  "editor.fontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "window.zoomLevel": 2,
+  "workbench.iconTheme": "material-icon-theme",
+  "chaliceIcons.showArrows": false,
+  "editor.suggestSelection": "first",
+  "editor.detectIndentation": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "typescript.format.enable": true,
+  "javascript.suggest.autoImports": false,
+  "typescript.suggest.autoImports": false,
+  "workbench.settings.editor": "json",
+  "workbench.editor.showTabs": true,
+  "eslint.workingDirectories": [
+    {
+      "directory": "./",
+      "changeProcessCWD": true
+    }
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html",
+    "typescriptreact"
+  ],
+  "explorer.compactFolders": false,
+  "colorize.colorized_colors": [
+    "BROWSERS_COLORS",
+    "HEXA",
+    "RGB",
+    "HSL"
+  ],
+  "colorize.languages": [
+    "css",
+    "sass",
+    "scss",
+    "less",
+    "postcss",
+    "sss",
+    "stylus",
+    "xml",
+    "svg",
+    "javascript",
+    "typescript",
+    "typescriptreact",
+  ],
+  "colorize.hide_current_line_decorations": false,
+}
