@@ -26,7 +26,8 @@ brew tap AdoptOpenJDK/openjdk
 brew update
 
 echo "Install Node & dependencies"
-brew install node
+brew install nvm
+nvm install node
 brew install watchman
 brew install yarn
 
