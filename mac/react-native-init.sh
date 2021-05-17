@@ -4,6 +4,7 @@
 # How to use;
 # - Determine a workspace folder (e.g. ~/ws/react-native). 
 # - Copy this file to the root of your workspace folder.
+# - Change the name 'MyApp' in this script to the desired project name.
 # - In the terminal, go to the workspace folder.
 # - Call 'chmod +x ./react-native-init.sh' to set the rights
 # - Call this script (''./react-native-init.sh'). This creates the app, and opens the code in Visual Studio Code
