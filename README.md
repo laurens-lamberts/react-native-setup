@@ -8,7 +8,7 @@ Run [this](./mac/dev-setup.sh) script using the terminal to install necessary to
 
 ## Windows
 
-Run [this](./windows/dev-setup.sh) script using the command line to install necessary tools to develop for Android.
+Run [this](./windows/dev-setup.bat) script using the command line to install necessary tools to develop for Android.
 
 ## General
 
