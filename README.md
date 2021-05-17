@@ -12,4 +12,5 @@ Run [this](./windows/dev-setup.sh) script using the command line to install nece
 
 ## General
 
-[Tips & tricks](./tips.md)
+- [Tips & tricks](./tips.md)
+- Some configs used before in a recent We are you project are placed [here](./configs). If you want to start a project with similar coding guidelines, you could copy these into your project root.
