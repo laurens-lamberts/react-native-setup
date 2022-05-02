@@ -1,7 +1,4 @@
-
-brew tap AdoptOpenJDK/openjdk
 brew install android-platform-tools
-brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
 
 echo "Do you wish to install Android SDK & Android Studio?"
 select yn in "Yes" "No"; do
@@ -17,5 +14,8 @@ select yn in "Yes" "No"; do
         No ) break;;
     esac
 done
+
+brew install openjdk@11
+sudo ln -sfn $(brew --prefix)/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
 
 echo "Setup Android completed!"
