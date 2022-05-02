@@ -46,3 +46,10 @@ plutil -replace StandardViewSettings.IconViewSettings.arrangeBy -string grid ~/L
 # Restart the dock and finder
 killall Dock
 killall Finder
+
+# Manually increase fontSize here
+code ~/Library/Application Support/Hyper/.hyper.js
+
+# Clone Github repo's
+git clone --recursive https://github.com/electro-smith/DaisyExamples /Users/laurenslamberts/ws/daisy
+git clone https://github.com/laurens-lamberts/surroundings.git /Users/laurenslamberts/ws/react-native
