@@ -26,6 +26,8 @@ brew install yarn
 echo "Node version installed;"
 node --version
 
+yarn global add react-devtools
+
 echo "Do you wish to install Visual Studio Code?"
 select yn in "Yes" "No"; do
     case $yn in
