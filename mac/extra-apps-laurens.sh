@@ -10,7 +10,7 @@ brew install --cask discord
 brew install --cask zoom
 brew install --cask zeplin
 brew install --cask eagle
-brew install --cask altair-graphql-client
+# brew install --cask altair-graphql-client
 brew install --cask github
 
 # Scrcpy is a tool to show an attached Android device display on the mac screen
@@ -38,7 +38,7 @@ defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</
 killall Dock
 
 # Manually increase fontSize here
-code ~/Library/Application Support/Hyper/.hyper.js
+code ~/.hyper.js
 
 # Clone Github repo's
 git clone --recursive https://github.com/electro-smith/DaisyExamples /Users/laurenslamberts/ws/daisy
