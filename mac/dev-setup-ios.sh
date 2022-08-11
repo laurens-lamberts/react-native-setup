@@ -9,4 +9,6 @@ sudo python -m ensurepip --upgrade
 sudo pip install --upgrade pip
 sudo pip3 install fb-idb
 
+# todo: XCODE
+
 echo "Setup iOS completed!"

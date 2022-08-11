@@ -12,6 +12,7 @@ if test ! $(which brew); then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/laurenslamberts/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
+    # or... export PATH="/opt/homebrew/bin:$PATH" >> ~/.zshrc
 fi
 
 echo "Getting Homebrew ready. This can take about 5 minutes..."
@@ -20,7 +21,9 @@ brew tap homebrew/cask
 brew update
 
 echo "Install Node & dependencies"
+mkdir ~/.nvm
 brew install nvm
+
 brew install watchman
 brew install yarn
 
@@ -40,6 +43,17 @@ sudo languagesetup -langspec 20
 echo "Add to zshrc manually;"
 # export NVM_DIR=~/.nvm
 # source $(brew --prefix nvm)/nvm.sh
+
+
+
+# Add below to bottom of ~/.zshrc
+# export NVM_DIR="$HOME/.nvm"
+#   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+#   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# THEN, do; source ~/.zshrc
+
+
 
 # nvm install node
 
