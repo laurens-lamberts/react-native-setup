@@ -10,6 +10,7 @@ brew install --cask discord
 brew install --cask zoom
 brew install --cask zeplin
 brew install --cask eagle
+brew install --cask google-drive
 # brew install --cask altair-graphql-client
 brew install --cask github
 
