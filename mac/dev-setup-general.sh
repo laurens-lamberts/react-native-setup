@@ -10,6 +10,8 @@ fi
 if test ! $(which brew); then
     echo "Installing homebrew..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/laurenslamberts/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 echo "Getting Homebrew ready. This can take about 5 minutes..."
@@ -19,12 +21,8 @@ brew update
 
 echo "Install Node & dependencies"
 brew install nvm
-nvm install node
 brew install watchman
 brew install yarn
-
-echo "Node version installed;"
-node --version
 
 yarn global add react-devtools
 
@@ -35,5 +33,17 @@ select yn in "Yes" "No"; do
         No ) break;;
     esac
 done
+
+echo "Set mac language to English"
+sudo languagesetup -langspec 20
+
+echo "Add to zshrc manually;"
+# export NVM_DIR=~/.nvm
+# source $(brew --prefix nvm)/nvm.sh
+
+# nvm install node
+
+# echo "Node version installed;"
+#node --version
 
 echo "Setup general completed!"

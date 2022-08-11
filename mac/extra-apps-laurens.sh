@@ -3,7 +3,6 @@ brew install --cask imageoptim
 brew install --cask hyper
 brew install --cask flipper
 brew install --cask postman
-brew install --cask notion
 brew install --cask slack
 brew install --cask spotify
 brew install --cask gitkraken
@@ -33,15 +32,15 @@ defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</
 defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/GoogleChrome.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
 defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Discord.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
 defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Microsoft Teams.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
-# defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Microsoft Office.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
-defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Microsoft Excel.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
-defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Microsoft Word.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
 defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/WhatsApp.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
 
 defaults write com.apple.dock autohide -bool true 
 defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock "show-recents" -bool "false"
+defaults write com.apple.dock static-only -bool true
 
 plutil -replace StandardViewSettings.IconViewSettings.arrangeBy -string grid ~/Library/Preferences/com.apple.finder.plist
+osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to not dark mode'
 
 # Restart the dock and finder
 killall Dock
@@ -52,4 +51,4 @@ code ~/Library/Application Support/Hyper/.hyper.js
 
 # Clone Github repo's
 git clone --recursive https://github.com/electro-smith/DaisyExamples /Users/laurenslamberts/ws/daisy
-git clone https://github.com/laurens-lamberts/surroundings.git /Users/laurenslamberts/ws/react-native
+git clone https://github.com/laurens-lamberts/surroundings.git /Users/laurenslamberts/ws/react-native/surroundings
