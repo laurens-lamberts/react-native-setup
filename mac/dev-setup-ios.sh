@@ -12,4 +12,6 @@ sudo pip3 install fb-idb
 # 3. when this is done, open Xcode, and configure the command line tools as following;
 # Make sure to point Xcode to the version of the command line tools we just installed. To do this launch Xcode, open the “Preferences…” item under the Xcode menu, go to the “Locations” section and select the version of command line tools we just installed from the Command Line Tools drop down.
 
+# TODO: manually set IDB binary location to `/opt/homebrew/bin/idb` in Flipper settings
+
 echo "Setup iOS completed!"
