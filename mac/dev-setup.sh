@@ -9,3 +9,4 @@
 sh ./dev-setup-general.sh
 sh ./dev-setup-android.sh
 sh ./dev-setup-ios.sh
+sh ./dev-setup-ios-m1.sh
