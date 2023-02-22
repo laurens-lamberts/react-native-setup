@@ -1,4 +1,4 @@
-# React native new project creation MAC
+# React native - new project creation MAC
 # Author: Laurens Lamberts
 
 # How to use;
@@ -9,7 +9,7 @@
 # - Call 'chmod +x ./react-native-init.sh' to set the rights
 # - Call this script (''./react-native-init.sh'). This creates the app, and opens the code in Visual Studio Code
 
-npx react-native init MyApp --template react-native-template-typescript
+npx react-native init MyApp
 cd MyApp
 code -n .
 cd android
