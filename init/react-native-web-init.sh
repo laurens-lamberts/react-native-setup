@@ -14,7 +14,7 @@ function pkg-script () {
 }
 
 WORKSPACE_DIR = "~/ws/react-native"
-APP_NAME = "MyApp"
+APP_NAME = "my-app"
 
 # Create a folder for the new project
 mkdir $WORKSPACE_DIR/$APP_NAME
@@ -23,7 +23,7 @@ cp -r ./configs $WORKSPACE_DIR/$APP_NAME/configs
 # Go to the workspace folder
 cd $WORKSPACE_DIR
 # Init the new project
-yarn create react-app my-app --template typescript
+yarn create react-app $APP_NAME --template typescript
 # Go to the app folder
 cd $APP_NAME
 
@@ -77,6 +77,14 @@ select yn in "Yes" "No"; do
     case $yn in
         Yes ) yarn add react-native-vector-icons react-native-svg
               yarn add -D @types/react-native-vector-icons
+              break;;
+        No ) break;;
+    esac
+done
+echo "Would you like react-native-gesture-handler (a package you can use to handle gestures in your (web)-app)?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) yarn add react-native-gesture-handler
               break;;
         No ) break;;
     esac

@@ -10,8 +10,9 @@ sudo gem uninstall cocoapods
 brew install cocoapods
 sudo gem install cocoapods
 
-# not sure if this is still necessary...
-# sudo arch -x86_64 gem install ffi
+# TODO: we might need to install the latest XCode command line tools before watchman...
+# Installing latest watchman required for wml (watchman watch-list for developing libraries as symlinks are not supported by the Metro bundler)
+brew install watchman
 
 sudo xcode-select --switch /Applications/Xcode.app
 
