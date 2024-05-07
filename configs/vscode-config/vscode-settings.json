@@ -9,23 +9,23 @@
     "typescriptreact"
   ],
   "javascript.validate.enable": false,
-  "javascript.implicitProjectConfig.checkJs": true,
+  "js/ts.implicitProjectConfig.checkJs": true,
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
-  "window.zoomLevel": 2,
+  "editor.fontFamily": "SF Mono",
   "workbench.iconTheme": "material-icon-theme",
   "chaliceIcons.showArrows": false,
   "editor.suggestSelection": "first",
   "editor.detectIndentation": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "typescript.format.enable": true,
   "javascript.suggest.autoImports": false,
   "typescript.suggest.autoImports": false,
   "workbench.settings.editor": "json",
-  "workbench.editor.showTabs": true,
+  "workbench.editor.showTabs": "multiple",
   "eslint.workingDirectories": [
     {
       "directory": "./",
@@ -39,12 +39,7 @@
     "typescriptreact"
   ],
   "explorer.compactFolders": false,
-  "colorize.colorized_colors": [
-    "BROWSERS_COLORS",
-    "HEXA",
-    "RGB",
-    "HSL"
-  ],
+  "colorize.colorized_colors": ["BROWSERS_COLORS", "HEXA", "RGB", "HSL"],
   "colorize.languages": [
     "css",
     "sass",
@@ -57,7 +52,34 @@
     "svg",
     "javascript",
     "typescript",
-    "typescriptreact",
+    "typescriptreact"
   ],
   "colorize.hide_current_line_decorations": false,
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false,
+    "yaml": true
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.advanced": {},
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "gitlens.ai.experimental.provider": "openai",
+  "gitlens.ai.experimental.openai.model": "gpt-4-1106-preview",
+  "window.zoomLevel": 1,
+  "editor.stickyScroll.enabled": false,
+  "jest.autoRun": "false",
+  "workbench.tree.enableStickyScroll": false,
+  "terminal.integrated.fontFamily": "monospace",
+  "workbench.colorTheme": "Horizon Default"
 }
