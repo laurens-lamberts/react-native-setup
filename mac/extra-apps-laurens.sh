@@ -1,23 +1,21 @@
 # Install apps
 # Work apps
-brew install --cask imageoptim
-brew install --cask hyper
-brew install --cask flipper
-brew install --cask postman
+brew install --cask visual-studio-code
+brew install --cask miro
+brew install --cask figma
 brew install --cask slack
 brew install --cask gitkraken
-# brew install --cask zeplin
-brew install --cask figma
+brew install --cask postman
 brew install --cask altair-graphql-client
+brew install --cask imageoptim
+brew install --cask flipper
 
 # Other apps
-brew install --cask alt-tab
 brew install --cask spotify
 brew install --cask discord
 brew install --cask eagle
 brew install --cask google-drive
 brew install --cask steam
-
 # brew install --cask native-access
 
 # Scrcpy is a tool to show an attached Android device display on the mac screen
@@ -29,23 +27,21 @@ brew tap homebrew/cask-drivers
 brew install focusrite-control
 
 # DSP tools
-brew install putty
-brew install gcc
+# brew install putty
+# brew install gcc
 
 # Add the apps to the dock
-defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Hyper.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
-defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Flipper.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
-defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Postman.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
-defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Gitkraken.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
-defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Discord.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
-defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Microsoft Teams.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
-# defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Microsoft Office.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
+function add_apps_to_dock() {
+  local apps=("$@")
+  for app in "${apps[@]}"; do
+    defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/$app.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
+  done
+  killall Dock
+}
+add_apps_to_dock "Chrome" "Visual Studio Code" "GitKraken"
 
 # Restart the dock and finder
 killall Dock
-
-# Manually increase fontSize here
-code ~/.hyper.js
 
 # Clone Github repo's
 git clone https://github.com/laurens-lamberts/react-native-setup.git /Users/laurenslamberts/ws/react-native/react-native-setup
