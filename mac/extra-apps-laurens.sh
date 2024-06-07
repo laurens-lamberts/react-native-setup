@@ -16,6 +16,8 @@ brew install --cask discord
 brew install --cask eagle
 brew install --cask google-drive
 brew install --cask steam
+brew install --cask disk-drill
+brew install --cask carbon-copy-cloner
 # brew install --cask native-access
 
 # Scrcpy is a tool to show an attached Android device display on the mac screen
@@ -38,7 +40,7 @@ function add_apps_to_dock() {
   done
   killall Dock
 }
-add_apps_to_dock "Chrome" "Visual Studio Code" "GitKraken"
+add_apps_to_dock "Chrome" "Visual Studio Code" "GitKraken" "Disk Drill" "Carbon Copy Cloner"
 
 # Restart the dock and finder
 killall Dock
