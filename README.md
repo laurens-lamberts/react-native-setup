@@ -1,6 +1,7 @@
 # React native setup
 
 Scripts to get up and running with React Native!
+Additionally there are configuration scripts for your mac.
 
 ## Mac
 

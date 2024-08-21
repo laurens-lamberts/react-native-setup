@@ -18,6 +18,7 @@ brew install --cask google-drive
 brew install --cask steam
 brew install --cask disk-drill
 brew install --cask carbon-copy-cloner
+brew install --cask musicbrainz-picard
 # brew install --cask native-access
 
 # Scrcpy is a tool to show an attached Android device display on the mac screen
