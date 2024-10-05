@@ -24,6 +24,8 @@ echo "Install Node & dependencies"
 mkdir ~/.nvm
 brew install nvm
 
+brew install node
+
 brew install watchman
 brew install yarn
 
