@@ -1,17 +1,17 @@
 # Install apps
 # Work apps
-brew install --cask visual-studio-code
-brew install --cask miro
+# brew install --cask visual-studio-code
+# brew install --cask miro
 brew install --cask figma
-brew install --cask slack
+# brew install --cask slack
 brew install --cask gitkraken
 brew install --cask postman
-brew install --cask altair-graphql-client
+# brew install --cask altair-graphql-client
 brew install --cask imageoptim
-brew install --cask flipper
+# brew install --cask flipper
 
 # Other apps
-brew install --cask spotify
+# brew install --cask spotify
 brew install --cask discord
 brew install --cask eagle
 brew install --cask google-drive
@@ -41,12 +41,12 @@ function add_apps_to_dock() {
   done
   killall Dock
 }
-add_apps_to_dock "Chrome" "Visual Studio Code" "GitKraken" "Disk Drill" "Carbon Copy Cloner"
+add_apps_to_dock "GitKraken" "Disk Drill" "Carbon Copy Cloner"
 
 # Restart the dock and finder
 killall Dock
 
 # Clone Github repo's
-git clone https://github.com/laurens-lamberts/react-native-setup.git /Users/laurenslamberts/ws/react-native/react-native-setup
+# git clone https://github.com/laurens-lamberts/react-native-setup.git /Users/laurenslamberts/ws/react-native/react-native-setup
 git clone --recursive https://github.com/electro-smith/DaisyExamples /Users/laurenslamberts/ws/daisy
 git clone https://github.com/laurens-lamberts/surroundings.git /Users/laurenslamberts/ws/react-native/surroundings
