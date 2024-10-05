@@ -6,6 +6,7 @@
 # - Optional: Call 'chmod +x ./dev-setup.sh' to set the rights
 # - Call the script WITHOUT SUDO using './dev-setup.sh'
 
+sh ./mac-config.sh
 sh ./dev-setup-general.sh
 sh ./dev-setup-android.sh
 sh ./dev-setup-ios.sh

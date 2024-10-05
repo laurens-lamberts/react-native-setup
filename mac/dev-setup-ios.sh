@@ -1,7 +1,7 @@
 # Python & pip
-brew install python3
-sudo python -m ensurepip --upgrade
-sudo pip install --upgrade pip
+# brew install python3
+# sudo python3 -m ensurepip --upgrade
+# sudo pip3 install --upgrade pip
 
 # Install Ruby version manager
 \curl -sSL https://get.rvm.io | bash -s stable --ruby

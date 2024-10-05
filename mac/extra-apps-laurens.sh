@@ -33,19 +33,6 @@ brew install focusrite-control
 # brew install putty
 # brew install gcc
 
-# Add the apps to the dock
-function add_apps_to_dock() {
-  local apps=("$@")
-  for app in "${apps[@]}"; do
-    defaults write com.apple.dock persistent-apps -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/$app.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
-  done
-  killall Dock
-}
-add_apps_to_dock "GitKraken" "Disk Drill" "Carbon Copy Cloner"
-
-# Restart the dock and finder
-killall Dock
-
 # Clone Github repo's
 # git clone https://github.com/laurens-lamberts/react-native-setup.git /Users/laurenslamberts/ws/react-native/react-native-setup
 git clone --recursive https://github.com/electro-smith/DaisyExamples /Users/laurenslamberts/ws/daisy
