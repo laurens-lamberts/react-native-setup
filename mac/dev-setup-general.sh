@@ -26,8 +26,10 @@ brew install nvm
 
 brew install node
 
+# Below corepack enable enables yarn
+corepack enable
+
 brew install watchman
-brew install yarn
 
 yarn global add react-devtools
 

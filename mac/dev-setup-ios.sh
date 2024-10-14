@@ -1,7 +1,10 @@
-# Python & pip
-# brew install python3
-# sudo python3 -m ensurepip --upgrade
-# sudo pip3 install --upgrade pip
+brew install python3
+brew install python
+brew unlink python && brew link --overwrite python
+
+sudo python3 -m ensurepip --upgrade
+sudo pip install --upgrade pip
+sudo pip3 install fb-idb
 
 # Install Ruby version manager
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
@@ -23,6 +26,7 @@ sudo xcode-select --switch /Applications/Xcode.app
 
 # For some projects node could not be found by XCode. This fixes that.
 sudo ln -s $(which node) /usr/local/bin/node
+
 
 # TODO: XCODE
 # 1. Install Xcode from the App Store
