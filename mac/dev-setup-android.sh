@@ -15,7 +15,9 @@ select yn in "Yes" "No"; do
     esac
 done
 
-brew install openjdk@11
-sudo ln -sfn $(brew --prefix)/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
+brew install openjdk@17
+export JAVA_HOME=$(/usr/libexec/java_home -v 17)
+export PATH=$JAVA_HOME/bin:$PATH
+source ~/.zshrc 
 
 echo "Setup Android completed!"
